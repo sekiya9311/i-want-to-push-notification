@@ -4,6 +4,11 @@ using Android.OS;
 using Prism;
 using Prism.Ioc;
 
+using Android.Gms.Common;
+using Firebase.Messaging;
+using Firebase.Iid;
+using Android.Util;
+
 namespace PushShitaiYo.Droid
 {
     [Activity(Label = "PushShitaiYo", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
