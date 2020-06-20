@@ -39,10 +39,6 @@
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidDexTool>d8</AndroidDexTool>
     <AndroidUseAapt2>true</AndroidUseAapt2>
-    <AotAssemblies>false</AotAssemblies>
-    <EnableLLVM>false</EnableLLVM>
-    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
-    <BundleAssemblies>false</BundleAssemblies>
     <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -104,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PushShitaiYo\PushShitaiYo.csproj">
-      <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
+      <Project>{56481C91-5B09-4B94-9733-8159A93DF177}</Project>
       <Name>PushShitaiYo</Name>
     </ProjectReference>
   </ItemGroup>
