@@ -10,10 +10,15 @@ namespace PushShitaiYo.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
-        public MainPageViewModel(INavigationService navigationService)
+        private readonly INotificationService notificationService;
+
+        public MainPageViewModel(INavigationService navigationService, INotificationService notificationService)
             : base(navigationService)
         {
             Title = "Main Page";
+            this.notificationService = notificationService;
+
+            this.notificationService.ChangeToAvailable();
         }
     }
 }
